@@ -21,8 +21,6 @@ def home():
     return render_template("index.html", form=form)
 
 
-# set FLASK_DEBUG=on
-
 
 class OrderForm(FlaskForm):
     first_name = StringField("First name", validators=[DataRequired(), Length(min=2, max=55)])
