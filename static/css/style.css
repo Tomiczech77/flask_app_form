@@ -4,7 +4,6 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	margin-bottom: 100px;
 }
 
 .heading {
@@ -79,7 +78,7 @@ label {
 }
 
 .row {
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 
 .button-27 {
