@@ -4,6 +4,7 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	padding-bottom: 100px;
 }
 
 .heading {
@@ -123,26 +124,23 @@ label {
   transform: translateY(0);
 }
 
-.order-confirmation h1 {
-	font-size: 70px;
+.order-summary h1 {
+	font-size: 50px;
 	font-family: Pacifico, cursive;
-	text-align: center;
 	margin: 50px 0px 20px;
-	padding-bottom: 20px;
 	border-top: 4px solid rgb(15, 14, 14);
-	padding-top: 40px;
+	padding-top: 75px;
 }
 
-.col-confirmation {
-	font-size: 15px;
-	font-family: Verdana;
-	color: #495057;
-	padding: 14px 0px 0px 15px;
-	margin: 25px 0px 0px 25px;
-	width: 337px;
-	display: inline-flex;
-    background-color: #fff;
-	border: 1px solid #ced4da;
-	border-radius: 10px;
-	line-height: 50%;
+.order-summary hr {
+	padding-bottom: 20px;
+}
+
+.row-summary {
+	font-size: 20px;
+	font-family: Verdana, cursive;
+}
+
+.order-summary span {
+	font-weight: bold;
 }

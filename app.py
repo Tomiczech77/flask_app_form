@@ -34,7 +34,6 @@ class OrderForm(FlaskForm):
 
     submit = SubmitField("Submit")
 
-
 @app.route("/", methods=["GET", "POST"])
 def home():
     form = OrderForm()
@@ -64,8 +63,8 @@ def home():
         
         subtotal = product_price * quantity
         vat = round(VAT_RATE / 100 * subtotal, 2)
-        subtotal_with_price = subtotal + vat
-        converted_price = round((rate_amount * subtotal_with_price) / rate, 2)
+        subtotal_with_vat = subtotal + vat
+        converted_price = round((rate_amount * subtotal_with_vat) / rate, 2)
 
         results = {"first_name": first_name,
                    "last_name": last_name,
@@ -78,7 +77,7 @@ def home():
                    "rate_code": rate_code,
                    "vat": vat,
                    "vat_rate": VAT_RATE,
-                   "product_price_with_vat": subtotal_with_price,
+                   "product_price_with_vat": subtotal_with_vat,
                    "converted_price": converted_price}
 
 

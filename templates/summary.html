@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
     <h1>Summary:</h1>
     <p>First name: {{summary["first_name"]}}</p>
     <p>Last name: {{summary["last_name"]}}</p>
@@ -12,45 +12,38 @@
     <p>VAT: {{summary["vat"]}} CZK</p>
     <p>Product price with VAT: {{summary["product_price_with_vat"]}} CZK</p>
     <p>Total price: {{summary["converted_price"]}} {{summary["rate_code"]}}</p>
-</div>
-
-<!-- <div class="order-confirmation">
-    <h1>Summary</h1>
-    <hr>
-    <div class="col-confirmation">
-        <p>First name: {{summary["first_name"]}}</p>
-    </div>
-    <div class="col-confirmation">
-        <p>Last name: {{summary["last_name"]}}</p>
-    </div>
-    <div class="col-confirmation">
-        <p>Email: {{summary["email"]}}</p>
-    </div><br>
-    <div class="col-confirmation">
-        <p>Product id: {{summary["product_id"]}}</p>
-    </div>
-    <div class="col-confirmation">
-        <p>Product name: {{summary["product_name"]}}</p>
-    </div>
-    <div class="col-confirmation">
-        <p>Quantity: {{summary["quantity"]}}</p>
-    </div>
-    <div class="col-confirmation">
-        <p>Product price: {{summary["product_price"]}} CZK</p>	
-    </div>
-    <div class="col-confirmation">
-        <p>Subtotal: {{summary["subtotal"]}} CZK</p>
-    </div>
-    <div class="col-confirmation">
-        <p>VAT rate: {{summary["vat_rate"]}} %</p>
-    </div>
-    <div class="col-confirmation">
-        <p>VAT: {{summary["vat"]}} CZK</p>
-    </div>
-    <div class="col-confirmation">
-        <p>Product price with VAT: {{summary["product_price_with_vat"]}} CZK</p>
-    </div>
-    <div class="col-confirmation">
-        <p>Total price: {{summary["converted_price"]}} {{summary["rate_code"]}}</p>
-    </div>
 </div> -->
+
+<div class="order-summary">
+    <h1>Summary:</h1>
+    <div class="row-summary">
+        <p><span>First name:</span> {{summary["first_name"]}}</p>
+    </div>
+    <div class="row-summary">
+        <p><span>Last name:</span> {{summary["last_name"]}}</p>
+    </div>
+    <div class="row-summary">
+        <p><span>Email:</span> {{summary["email"]}}</p>
+    </div>
+    <div class="row-summary">
+        <p><span>Product name:</span> {{summary["product_name"]}}</p>
+    </div>
+    <div class="row-summary">
+        <p><span>Quantity:</span> {{summary["quantity"]}}</p>
+    </div>
+    <div class="row-summary">
+        <p><span>Product price:</span> {{summary["product_price"]}} CZK</p>	
+    </div>
+    <div class="row-summary">
+        <p><span>Subtotal:</span> {{summary["subtotal"]}} CZK</p>
+    </div>
+    <div class="row-summary">
+        <p><span>VAT:</span> {{summary["vat"]}} CZK (20%)</p>
+    </div>
+    <div class="row-summary">
+        <p><span>Product price with VAT:</span> {{summary["product_price_with_vat"]}} CZK</p>
+    </div>
+    <div class="row-summary">
+        <p><span>Total price:</span> {{summary["converted_price"]}} {{summary["rate_code"]}}</p>
+    </div>
+</div>

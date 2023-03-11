@@ -68,7 +68,6 @@ def get_rates():
             exchange_rate_list = create_exchange_rate_list(response)
             save_data_into_file(exchange_rate_list, FILENAME)
         else:
-            # TODO response code not 200
             raise NotImplementedError("Response code not 200")
     else:
         exchange_rate_list = get_data_from_file(FILENAME)
